@@ -1,0 +1,10 @@
+[Unit]
+Description=Runs bacup every day
+
+[Timer]
+OnBootSec=10min
+OnUnitActiveSec=1d
+Unit=autobackup.service
+
+[Install]
+WantedBy=multi-user.target
