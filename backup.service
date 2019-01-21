@@ -1,0 +1,12 @@
+[Unit]
+Description=Auto SkriptMC Backup
+
+[Service]
+WorkingDirectory=/home/
+Type=forking
+ExecStart=/home/autobackup
+KillMode=process
+User=www-data
+
+[Install]
+WantedBy=multi-user.target
